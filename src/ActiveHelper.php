@@ -11,6 +11,7 @@ class ActiveHelper
         $route = Route::current()->getName();
         $params = explode(',', str_replace("'", '', $params));
         $match = array_filter($params, function($param) use($route) {
+            $param = trim($param);
             return preg_match("/$param/", $route);
         });
 
