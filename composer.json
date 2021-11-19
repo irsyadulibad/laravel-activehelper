@@ -1,0 +1,32 @@
+{
+    "name": "irsyadulibad/laravel-activehelper",
+    "description": "Active State Helper for Laravel Blade",
+    "keywords": [
+        "laravel",
+        "active",
+        "active state",
+        "blade"
+    ],
+    "authors": [
+        {
+            "name": "irsyadulibad",
+            "email": "ahmadirsyadulibad7@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "illuminate/support": "8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Irsyadulibad\\LaravelActivehelper\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": "Irsyadulibad\\LaravelActivehelper\\ActiveHelperServiceProvider"
+        }
+    },
+    "minimum-stability": "stable"
+}
